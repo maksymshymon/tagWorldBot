@@ -3,10 +3,7 @@ import sqlite3
 import schedule
 import time
 
-
-# from telebot import types
-# -479132357
-TOKEN = '1346075147:AAE6GHGRUpPqz_k4mPULHjYSjiLRyeYTel4'
+TOKEN = ''
 
 DB = sqlite3.connect("db.db", check_same_thread=False)
 cursor = DB.cursor()
@@ -32,7 +29,7 @@ def get_countPeopleGeneral():
 
 
 def stats():
-    bot.send_message(-479132357,
+    bot.send_message(000000000,
                      "Users tagged: <b>"+str(get_countPeopleGeneral())+"</b>\nTag used: <b>"+str(get_countUsingGeneral())+"</b>",
                      parse_mode='html', reply_markup=None)
 

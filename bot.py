@@ -1,10 +1,7 @@
 import telebot
 import sqlite3
 
-
-# from telebot import types
-# -479132357
-TOKEN = '1346075147:AAE6GHGRUpPqz_k4mPULHjYSjiLRyeYTel4'
+TOKEN = ''
 
 DB = sqlite3.connect("db.db", check_same_thread=False)
 cursor = DB.cursor()
